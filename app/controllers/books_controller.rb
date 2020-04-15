@@ -22,8 +22,8 @@ def index
 end
 
 def show
-  @book = Book.new
   @user = current_user
+  @book = Book.new
   @books = Book.find(params[:id])
 end
 
